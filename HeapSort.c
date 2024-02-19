@@ -43,7 +43,7 @@ int main()
     sorted_arr[i] = arr[1];
     arr[1] = arr[len]; // 마지막 요소를 root로
 
-    while (idx * 2 + 1 <= len)
+    while (idx * 2 <= len - 1)
     {
       if (idx * 2 == len || arr[idx * 2] <= arr[idx * 2 + 1])
       {
